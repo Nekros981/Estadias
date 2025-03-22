@@ -1,0 +1,50 @@
+/* public/css/carrusel.css */
+/* Estilos para el carrusel */
+.carrusel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.carrusel-inner {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease-in-out; /* Animación suave */
+}
+
+.carrusel-item {
+    min-width: 100%;
+    height: 100%;
+}
+
+.carrusel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Controles del carrusel (opcional) */
+.carrusel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.carrusel-control.prev {
+    left: 10px;
+}
+
+.carrusel-control.next {
+    right: 10px;
+}

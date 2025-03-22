@@ -1,0 +1,126 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Encabezado con logo de la UTN y borde negro */
+.header {
+    text-align: center;
+    padding: 10px;
+    background-color: green;
+    border-bottom: 5px solid black; /* Borde negro grueso */
+}
+
+.logo-header {
+    width: 150px;
+    height: auto;
+}
+
+/* Estilos para el texto del encabezado */
+.texto-encabezado {
+    font-size: 24px; /* Texto más grande */
+    color: white; /* Texto en blanco */
+    text-shadow: 2px 2px 4px black; /* Contorno negro pequeño */
+    margin: 5px 0; /* Espaciado entre líneas */
+}
+
+/* Contenedor principal */
+.contenedor-principal {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Estilos para los recuadros verdes */
+.estacionamientos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); /* Recuadros más grandes */
+    gap: 10px;
+    width: 70%;
+}
+
+.btn-estacionamiento {
+    text-align: center;
+}
+
+.recuadro-verde {
+    width: 70px; /* Recuadros más grandes */
+    height: 70px; /* Recuadros más grandes */
+    background-color: green;
+    border: 4px solid black; /* Borde negro más grueso */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.recuadro-verde:hover {
+    transform: scale(1.1); /* Animación más visible al hacer hover */
+}
+
+.num-estacionamiento {
+    margin-top: 5px;
+    font-size: 14px; /* Texto un poco más grande */
+}
+
+/* Estilos para la información del usuario y botones */
+.datos-usuario {
+    width: 25%;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.datos-usuario p {
+    margin: 10px 0;
+}
+
+.botones-navegacion {
+    margin-top: 20px;
+}
+
+.btn-nav {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-nav:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.btn-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilos para el botón Recargar */
+.btn-recargar {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto blanco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-recargar:hover {
+    background-color: #333; /* Color más oscuro al hacer hover */
+    transform: scale(1.05);
+}

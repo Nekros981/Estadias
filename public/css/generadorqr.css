@@ -1,0 +1,150 @@
+/* Variables de colores */
+:root {
+    --color-primary: #12a14b;
+    --color-green-light: #e0f7e0; /* Verde clarito */
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-shadow: rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Estilos generales */
+body {
+    background: linear-gradient(135deg, var(--color-white), var(--color-green-light), #f0f0f0); /* Fondo degradado */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-size: 400% 400%; /* Para el efecto de difuminado infinito */
+    animation: gradientAnimation 10s ease infinite; /* Animación del degradado */
+}
+
+
+/* Rectángulo superior */
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    position: relative;
+    border: 4px solid var(--color-black); /* Borde más grande */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Sombra más grande */
+}
+
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Rectángulo superior */
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    position: relative;
+    border: 4px solid var(--color-black); /* Borde más grande */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Sombra más grande */
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+    padding: 50px;
+    border: 4px solid var(--color-black); /* Borde más grande */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Sombra más grande */
+    background-color: var(--color-white); /* Fondo blanco */
+    margin: 20px auto; /* Centrado y margen para separar del borde de la ventana */
+    max-width: 500px; /* Ancho máximo para el contenedor */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Estilos para las etiquetas */
+label {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--color-black);
+    text-shadow: 1px 1px 2px var(--color-shadow); /* Sombra en el texto */
+    display: block; /* Hace que las etiquetas ocupen toda la línea */
+    margin-bottom: 10px; /* Espacio entre etiquetas y inputs */
+}
+
+/* Estilos para los inputs */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid var(--color-black);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px var(--color-shadow);
+    transition: all 0.3s ease;
+    margin-bottom: 20px; /* Espacio entre inputs */
+}
+
+input[type="text"]:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 4px 8px var(--color-shadow);
+    transform: scale(1.02); /* Efecto de escala al enfocar */
+}
+
+/* Estilos para el botón */
+.btn-generar {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--color-white);
+    background-color: #28a745; /* Verde fuerte */
+    border: 3px solid var(--color-black);
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px var(--color-shadow);
+    text-shadow: 2px 2px 2px var(--color-black);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Efecto de salto al hacer hover */
+.btn-generar:hover {
+    transform: translateY(-5px) rotate(2deg); /* Efecto de salto y ligera inclinación */
+    box-shadow: 0 8px 12px var(--color-shadow);
+    background-color: #218838; /* Verde más oscuro al hacer hover */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .btn-generar {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    input[type="text"] {
+        font-size: 14px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+}

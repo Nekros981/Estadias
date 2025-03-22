@@ -1,0 +1,73 @@
+/* Estilos generales */
+body {
+    background: white; /* Fondo blanco */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal */
+.login {
+    width: 80%;
+    margin: 20px auto;
+    background: green; /* Fondo verde */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Menú superior */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Botón de Docente */
+.btn-docente {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    border: 2px solid green; /* Borde verde */
+}
+
+/* Botón de Inicio */
+.btn-inicio {
+    background-color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    border: 2px solid green; /* Borde verde */
+}
+
+.btn-inicio a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Formulario */
+.formulario {
+    background: white; /* Fondo blanco */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 2px solid green; /* Borde verde */
+}
+
+.formulario label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid green; /* Borde verde */
+    border-radius: 5px;
+}
